@@ -23,10 +23,10 @@ console.log(
 
 // Створюємо функцію з назвою getNumberFromString, яка приймає один аргумент s
 function getNumberFromString(s) {
-  if(s === isNaN) {
-    return 'Couldnt extract a number from the provided string.';
-  } else if(parseFloat(s)) {
+  if(parseFloat(s)) {
     return parseFloat(s);
+  } else {
+    return "Couldn't extract an integer from the provided string.";
   }
   // Використовуємо функцію parseFloat для того, щоб спробувати отримати число з рядка
   // Перевіряємо, чи є отримане значення числом за допомогою isNaN
@@ -134,8 +134,7 @@ console.log(
 
 // Створюємо функцію з назвою encodeURLComponent, яка приймає один аргумент - urlComponent
 function codURLComponentt(urlComponent) {
-  encodeURIComponent(urlComponent);
-  return (urlComponent);
+  return encodeURIComponent(urlComponent);
   // Використовуємо вбудовану функцію encodeURIComponent, щоб закодувати введений компонент URL.
   // Ця функція повертає закодований компонент URL, замінивши небезпечні символи на їх процентне кодування.
   // Повертаємо закодований компонент URL.
